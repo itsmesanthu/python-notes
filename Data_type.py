@@ -61,11 +61,3 @@ print(type(student_name))
 print(type(student_age))
 print(type(student_marks))
 print(type(is_passed))
-
-
-# =========================================
-# user intput checking the given intput is what type
-# =========================================
-str1=input("enter the vlue : ")
-print(str1)
-print(type(str1))
