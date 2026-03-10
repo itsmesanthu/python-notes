@@ -38,6 +38,6 @@ print("\n--------------------------------------\n")
 print("Counting characters using loop\n")
 count = 0
 for letter in word:
-    count = count + 1
+    count +=1
 print("Total characters:", count)
 print("\nProgram Completed Successfully!")
