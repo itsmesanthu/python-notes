@@ -13,9 +13,11 @@ list3.append(2)
 list1.insert(2,"gp")
 print(list1)
 print(list2)
-print(list3)#extend this used for adding two lists.
+print(list3)
+#extend this used for adding two lists.
 list1.extend(list2)
-print(list1)#remove this used for removing the element >>.
+print(list1)
+#remove this used for removing the element >>.
 list2.remove("hi")
 print(list2)#pop > pop the element in list
 list3.pop(2)
