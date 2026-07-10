@@ -115,3 +115,65 @@ for i in numbers():
 
 print("\nProgram Finished Successfully!")
 print("---------------------------------\n")
+
+# =========================================
+# MAP FUNCTION IN PYTHON
+# =========================================
+
+print("MAP FUNCTION IN PYTHON\n")
+
+print("Definition:")
+print("Map function applies a function")
+print("to all items in a list.\n")
+
+nums = [1, 2, 3, 4]
+
+print("Original List:", nums)
+
+result = list(map(lambda x: x * 2, nums))
+print("After Multiplication:", result)
+
+print("\nProgram Finished Successfully!")
+print("---------------------------------\n")
+# =========================================
+# FILTER FUNCTION IN PYTHON
+# =========================================
+
+print("FILTER FUNCTION IN PYTHON\n")
+
+print("Definition:")
+print("Filter function is used")
+print("to filter values based on condition.\n")
+
+nums = [1, 2, 3, 4, 5, 6]
+
+print("Original List:", nums)
+
+result = list(filter(lambda x: x % 2 == 0, nums))
+print("Even Numbers:", result)
+
+print("\nProgram Finished Successfully!")
+print("---------------------------------\n")
+# =========================================
+# REDUCE FUNCTION IN PYTHON
+# =========================================
+
+print("REDUCE FUNCTION IN PYTHON\n")
+
+print("Definition:")
+print("Reduce function reduces")
+print("all values into a single value.\n")
+
+
+from functools import reduce
+
+
+nums = [1, 2, 3, 4]
+
+print("Original List:", nums)
+result = reduce(lambda a, b: a + b, nums)
+
+print("Sum is:", result)
+
+print("\nProgram Finished Successfully!")
+print("---------------------------------\n")
