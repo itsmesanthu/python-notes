@@ -1,5 +1,5 @@
 # =========================================
-# CLOSURE 
+# CLOSURE
 # =========================================
 
 print("CLOSURE \n")
@@ -24,7 +24,7 @@ print("\nProgram Finished Successfully!")
 print("---------------------------------\n")
 
 # =========================================
-# DECORATOR 
+# DECORATOR
 # =========================================
 
 print("DECORATOR \n")
@@ -57,7 +57,7 @@ print("\nProgram Finished Successfully!")
 print("---------------------------------\n")
 
 # =========================================
-# LAMBDA FUNCTION 
+# LAMBDA FUNCTION
 # =========================================
 
 print("LAMBDA FUNCTION \n")

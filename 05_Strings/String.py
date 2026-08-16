@@ -1,88 +1,93 @@
 # =========================================
 # STRINGS IN PYTHON
 # =========================================
-print("STRINGS IN PYTHON\n")
+
+print("STRINGS IN PYTHON")
+
 # -----------------------------------------
 # DEFINITION
 # -----------------------------------------
 print("Definition:")
 print("A string is a sequence of characters enclosed in quotes.")
-print("Strings are used to store text data like names, messages, or sentences.\n")
+print("Strings are used to store text data like names, messages, or sentences.")
+
 # -----------------------------------------
 # TYPES OF QUOTES IN STRING
 # -----------------------------------------
-print("Types of Quotes in Python Strings:\n")
-# 1. Single Quotes
-a = 'Python'
-print("Single Quote Example:", a)
-# 2. Double Quotes
+print("\nTypes of quotes in Python strings:")
+
+# 1. Single quotes
+a = "Python"
+print("Single quote example:", a)
+
+# 2. Double quotes
 b = "Programming"
-print("Double Quote Example:", b)
-# 3. Triple Quotes (used for multiline text)
-c = '''Python is
-easy to learn'''
-print("Triple Quote Example:")
+print("Double quote example:", b)
+
+# 3. Triple quotes (used for multiline text)
+c = """Python is
+easy to learn"""
+print("Triple quote example:")
 print(c)
-print("\n")
+
 # -----------------------------------------
 # STRING VARIABLES
 # -----------------------------------------
 name = "Santhu"
 message = "Welcome to Python"
-print("Name:", name)
+print("\nName:", name)
 print("Message:", message)
-print("Data Type of name:", type(name))
-print("\n")
+print("Data type of name:", type(name))
+
 # -----------------------------------------
 # REAL WORLD EXAMPLE
 # -----------------------------------------
-print("REAL WORLD EXAMPLE\n")
+print("\nREAL WORLD EXAMPLE")
 student_name = "santhosh g p"
 college = "m s Engineering College"
 email = "gpsanthosanthu@gmail.com"
 print("Student Name:", student_name)
 print("College:", college)
 print("Email:", email)
-print("\n")
+
 # -----------------------------------------
 # STRING INDEXING
 # -----------------------------------------
-print("STRING INDEXING EXAMPLE\n")
+print("\nSTRING INDEXING EXAMPLE")
 word = "Python"
 print("First letter:", word[0])
 print("Second letter:", word[1])
 print("Last letter:", word[-1])
-print("\n")
+
 # -----------------------------------------
 # STRING SLICING
 # -----------------------------------------
-print("STRING SLICING EXAMPLE\n")
+print("\nSTRING SLICING EXAMPLE")
 text = "PythonProgramming"
 print("First 6 letters:", text[0:6])
 print("From index 6:", text[6:])
 print("Middle part:", text[3:10])
-print("revers the word :", text[::-1])
-print("skiping :",text[0::2])
-print("negative index using : ",text[-8:-2])
-print("\n")
+print("Reverse of the word:", text[::-1])
+print("Skipping characters:", text[0::2])
+print("Negative indexing:", text[-8:-2])
+
 # -----------------------------------------
 # STRING METHODS
 # -----------------------------------------
-print("STRING METHODS EXAMPLE\n")
+print("\nSTRING METHODS EXAMPLE")
 course = "python programming"
 print("Uppercase:", course.upper())
 print("Lowercase:", course.lower())
 print("Title case:", course.title())
 print("Replace:", course.replace("python", "Java"))
 print("Count of 'p':", course.count("p"))
-print("\n")
+
 # -----------------------------------------
 # LOOP WITH STRING
 # -----------------------------------------
-print("LOOP WITH STRING\n")
-word = "Python"
+print("\nLOOP WITH STRING")
 for letter in word:
     print(letter)
-print("\nProgram Finished Successfully!")
-s="-----------------------------------------"
-print(len(s))
+
+print("\nProgram finished successfully!")
+

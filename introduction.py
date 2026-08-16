@@ -1,6 +1,9 @@
 
-# Python Introduction
-print("Introduction of Python:")
+# =========================================
+# PYTHON INTRODUCTION
+# =========================================
+
+print("Introduction to Python:")
 print("________________________________________________________")
 print("* Python is a high-level programming language.")
 print("* Python is easy to learn and simple to use.")
@@ -13,9 +16,9 @@ print("* Python is open-source and free to use.")
 print("* Python has a large community support.")
 print("* Python is widely used in web development.")
 print("* Python is used in Artificial Intelligence and Machine Learning.")
-print("* Python is used for data science and data analysis.")
+print("* Python is used in data science and data analysis.")
 print("* Python is used in automation and scripting.")
-print("* Python supports multiple libraries like NumPy, Pandas, TensorFlow.")
+print("* Python supports multiple libraries like NumPy, Pandas, and TensorFlow.")
 print("* Python helps in fast development.")
 print("* Python has automatic memory management.")
 print("* Python is used in game development and software development.")

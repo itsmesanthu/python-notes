@@ -1,30 +1,47 @@
 # =========================================
 # FUNCTIONS IN PYTHON
 # =========================================
-print("FUNCTIONS IN PYTHON\n")
+
+print("FUNCTIONS IN PYTHON")
 print("Definition:")
-print("A function is a block of code used to perform a specific task.\n")
+print("A function is a block of code used to perform a specific task.")
+
+
 # Function without parameter
 def greet():
-    print("Hello, welcome to Python")
+    print("Hello, welcome to Python!")
+
+
 greet()
-print("\n-------------------------\n")
+print("\n-------------------------")
+
+
 # Function with parameter
 def display_name(name):
     print("My name is", name)
+
+
 display_name("Santhu")
-print("\n-------------------------\n")
+print("\n-------------------------")
+
+
 # Function with return value
 def add(a, b):
     return a + b
+
+
 result = add(10, 5)
 print("Sum is:", result)
-print("---------------------------------\n")
-def RefuntionCalling():
+print("---------------------------------")
+
+
+def call_examples():
     greet()
-    display_name("tanu")
-    sum=add(10,20)
-    print("sum is:",sum)
-RefuntionCalling()
-print("\nProgram Finished Successfully!")
-print("---------------------------------\n")
+    display_name("Tanu")
+    total = add(10, 20)
+    print("Total is:", total)
+
+
+call_examples()
+print("\nProgram finished successfully!")
+print("---------------------------------")
