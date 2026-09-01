@@ -2,7 +2,6 @@
 # MODULES
 # ============================================================
 # A module is a Python file containing reusable code.
-#
 # We can import a module using the import keyword.
 # ============================================================
 
