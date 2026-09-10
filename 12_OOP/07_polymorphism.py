@@ -1,0 +1,27 @@
+# ============================================================
+# POLYMORPHISM
+# ============================================================
+# Polymorphism means "many forms".
+#
+# In OOP, polymorphism allows the same method name or interface
+# to behave differently for different objects.
+# ============================================================
+
+
+class Dog:
+
+    def sound(self):
+        print("Dog says Woof")
+
+
+class Cat:
+
+    def sound(self):
+        print("Cat says Meow")
+
+
+dog = Dog()
+cat = Cat()
+
+dog.sound()
+cat.sound()
