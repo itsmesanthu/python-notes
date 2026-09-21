@@ -1,101 +1,127 @@
 # ============================================================
-# LIST COMPREHENSION WITH IF CONDITION
+# re.sub()
 # ============================================================
 
-# A condition can be added to list comprehension
-# to filter values.
+# re.sub() is used to replace matching text
+# with another value.
 #
 #
 # Syntax:
 #
-# [expression for item in iterable if condition]
+# re.sub(pattern, replacement, string)
 # ============================================================
 
-
-# ============================================================
-# 1. EVEN NUMBERS
-# ============================================================
-
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-even_numbers = [num for num in numbers if num % 2 == 0]
-
-print(even_numbers)
-
-
-# Output:
-# [2, 4, 6, 8, 10]
+import re
 
 
 # ============================================================
-# 2. ODD NUMBERS
+# 1. BASIC REPLACEMENT
 # ============================================================
 
-numbers = range(1, 11)
+text = "I like Java"
 
-odd_numbers = [num for num in numbers if num % 2 != 0]
-
-print(odd_numbers)
-
-
-# Output:
-# [1, 3, 5, 7, 9]
-
-
-# ============================================================
-# 3. NUMBERS GREATER THAN 5
-# ============================================================
-
-numbers = [1, 4, 6, 8, 3, 10, 2]
-
-result = [num for num in numbers if num > 5]
+result = re.sub("Java", "Python", text)
 
 print(result)
 
 
 # Output:
-# [6, 8, 10]
+# I like Python
 
 
 # ============================================================
-# 4. EVEN SQUARES
+# 2. REPLACE NUMBERS
 # ============================================================
 
-numbers = range(1, 11)
+text = "My phone number is 9876543210"
 
-result = [num ** 2 for num in numbers if num % 2 == 0]
+result = re.sub(r"\d", "*", text)
 
 print(result)
 
 
 # Output:
-# [4, 16, 36, 64, 100]
+# My phone number is **********
 
 
 # ============================================================
-# 5. FILTER STRINGS
+# 3. REMOVE NUMBERS
 # ============================================================
 
-names = ["santhu", "raj", "kiran", "arun", "vijay"]
+text = "Python123"
 
-result = [name for name in names if len(name) > 4]
+result = re.sub(r"\d", "", text)
 
 print(result)
 
 
 # Output:
-# ['santhu', 'kiran', 'vijay']
+# Python
+
+
+# ============================================================
+# 4. REMOVE EXTRA SPACES
+# ============================================================
+
+text = "Python     is     easy"
+
+result = re.sub(r"\s+", " ", text)
+
+print(result)
+
+
+# Output:
+# Python is easy
+
+
+# ============================================================
+# 5. REPLACE MULTIPLE CHARACTERS
+# ============================================================
+
+text = "Python-Java-C"
+
+result = re.sub(r"[-]", ",", text)
+
+print(result)
+
+
+# Output:
+# Python,Java,C
+
+
+# ============================================================
+# 6. REMOVE SPECIAL CHARACTERS
+# ============================================================
+
+text = "Python@123!"
+
+result = re.sub(r"[^a-zA-Z0-9]", "", text)
+
+print(result)
+
+
+# Output:
+# Python123
 
 
 # ============================================================
 # QUICK REVISION
 # ============================================================
-
-# List comprehension + condition
 #
-# [expression for item in iterable if condition]
+# re.sub()
+#     ↓
+# Replaces matching patterns.
+#
 #
 # Example:
 #
-# even = [num for num in numbers if num % 2 == 0]
+# re.sub("old", "new", text)
+#
+#
+# It can also be used to:
+#
+# 1. Remove numbers
+# 2. Remove special characters
+# 3. Replace spaces
+# 4. Clean text
 # ============================================================

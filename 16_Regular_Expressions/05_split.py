@@ -1,101 +1,108 @@
 # ============================================================
-# LIST COMPREHENSION WITH IF CONDITION
+# re.split()
 # ============================================================
 
-# A condition can be added to list comprehension
-# to filter values.
+# re.split() splits a string whenever the pattern
+# is found.
 #
 #
 # Syntax:
 #
-# [expression for item in iterable if condition]
+# re.split(pattern, string)
 # ============================================================
 
-
-# ============================================================
-# 1. EVEN NUMBERS
-# ============================================================
-
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-even_numbers = [num for num in numbers if num % 2 == 0]
-
-print(even_numbers)
-
-
-# Output:
-# [2, 4, 6, 8, 10]
+import re
 
 
 # ============================================================
-# 2. ODD NUMBERS
+# 1. SPLIT BY SPACE
 # ============================================================
 
-numbers = range(1, 11)
+text = "Python is easy"
 
-odd_numbers = [num for num in numbers if num % 2 != 0]
-
-print(odd_numbers)
-
-
-# Output:
-# [1, 3, 5, 7, 9]
-
-
-# ============================================================
-# 3. NUMBERS GREATER THAN 5
-# ============================================================
-
-numbers = [1, 4, 6, 8, 3, 10, 2]
-
-result = [num for num in numbers if num > 5]
+result = re.split(r"\s+", text)
 
 print(result)
 
 
 # Output:
-# [6, 8, 10]
+# ['Python', 'is', 'easy']
 
 
 # ============================================================
-# 4. EVEN SQUARES
+# 2. SPLIT BY COMMA
 # ============================================================
 
-numbers = range(1, 11)
+text = "Python,Java,C,C++"
 
-result = [num ** 2 for num in numbers if num % 2 == 0]
+result = re.split(",", text)
 
 print(result)
 
 
 # Output:
-# [4, 16, 36, 64, 100]
+# ['Python', 'Java', 'C', 'C++']
 
 
 # ============================================================
-# 5. FILTER STRINGS
+# 3. SPLIT BY COMMA OR SPACE
 # ============================================================
 
-names = ["santhu", "raj", "kiran", "arun", "vijay"]
+text = "Python, Java, C, C++"
 
-result = [name for name in names if len(name) > 4]
+result = re.split(r"[, ]+", text)
 
 print(result)
 
 
 # Output:
-# ['santhu', 'kiran', 'vijay']
+# ['Python', 'Java', 'C', 'C++']
+
+
+# ============================================================
+# 4. SPLIT USING MULTIPLE DELIMITERS
+# ============================================================
+
+text = "Python-Java,C;C++"
+
+result = re.split(r"[-,;]", text)
+
+print(result)
+
+
+# Output:
+# ['Python', 'Java', 'C', 'C++']
+
+
+# ============================================================
+# 5. LIMIT SPLITS
+# ============================================================
+
+text = "Python-Java-C-C++"
+
+result = re.split("-", text, maxsplit=2)
+
+print(result)
+
+
+# Output:
+# ['Python', 'Java', 'C-C++']
 
 
 # ============================================================
 # QUICK REVISION
 # ============================================================
-
-# List comprehension + condition
 #
-# [expression for item in iterable if condition]
+# re.split()
+#     ↓
+# Splits a string based on a pattern.
+#
 #
 # Example:
 #
-# even = [num for num in numbers if num % 2 == 0]
+# re.split(r"[,;]", text)
+#
+# Splits using:
+# comma
+# semicolon
 # ============================================================
